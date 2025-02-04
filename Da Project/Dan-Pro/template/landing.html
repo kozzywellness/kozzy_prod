@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/Da Project/images/logo.jpeg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Da Project/Dan-Pro/styles/CSS/landing.css">
+    <title>Kozzy | Landing Page</title>
+</head>
+<body>
+
+<header>
+    <div class="header-main">
+        <div class="header-logo-container">
+            <img src="/Da Project/images/logo.jpeg">
+            <!--<img src="/kozzy_prod/statics/Images/ko.png" alt="Kozzy Logo">-->
+            <h4>KOZZY WELLNESS</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="join.html">Contact Us</a></li>
+                <button>Join the Waitlist</button>
+            <button>Sign In</button>
+            </ul>
+        </nav>
+        <button class="menuOpen" onclick="openMenu()">menu</button>
+    </div>
+</header>
+<nav id="menuItems" class="smallScreen">
+  <ul>
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Our Services</a></li>
+      <li><a href="join.html">Contact Us</a></li>
+      <button>Join the Waitlist</button>
+  <button>Sign In</button>
+  </ul>
+</nav>
+<section id="hero" class="hero">
+    <h1>Empower your mind</h1>
+    <h3>Accessible Mental Health support of all</h3>
+    <a id="services.html" class="btn">Explore Our Services</a>
+</section>
+
+<section id="about" class="info-section">
+    <div class="info-card">
+      <img src="/Da Project/images/users.jpeg">
+      <!--<img src="/kozzy_prod/statics/Images/user.png" alt="Who We Are Icon" class="info-icon">-->
+      <h3>Who we are</h3>
+      <p>We are the Kozzy project, dedicated to promoting mental health and well-being. Our team is committed to providing accessible support and resources that empower individuals to take charge of their mental health.</p>
+    </div>
+    <div class="info-card">
+        <img src="/Da Project/images/lamp.jpeg">
+      <!--<img src="/kozzy_prod/statics/Images/miss.png" alt="Our Mission Icon" class="info-icon">-->
+      <h3>Our Mission</h3>
+      <p>Our mission is to enhance mental health awareness and provide accessible mental health support to all individuals. We aim to empower people to engage with their mental well-being and foster a supportive community.</p>
+    </div>
+    <div class="info-card">
+        <img src="/Da Project/images/pole.jpeg">
+      <!--<img src="/kozzy_prod/statics/Images/flag.png" alt="Our Vision Icon" class="info-icon">-->
+      <h3>Our Vision</h3>
+      <p>Our vision is a world where mental health support is universally accessible and prioritized, enabling individuals to lead fulfilling lives with empowered minds. We strive for a community where mental health is openly discussed and where everyone has the resources they need for a healthy mindset.</p>
+    </div>
+  </section>
+
+<!--<section>
+    <div class="container">
+            <div class="col-md-6">
+                <img src="/kozzy_prod/statics/Images/alxmentalhealthsession-22.jpg" alt="Our Story">
+                <img src="/kozzy_prod/statics/Images/alxmentalhealthsession-3.jpg" alt="our story">
+                <img src="/kozzy_prod/statics/Images/alxmentalhealthsession-8.jpg" alt="our story">
+            </div>
+    </div>
+</section>
+-->
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+
+        <div class="service">
+            <img src="/Da Project/images/ai.jpeg">
+            <!--<img src="/kozzy_prod/statics/Images/ai.PNG" alt="AI">-->
+            <h3>AI-Powered Digital Companion</h3>
+            <p>An AI-powered digital companion chatbot offers support, guidance, and resources for mental health, promoting well-being, understanding, and emotional resilience for users. </p>
+            <button>Chat with Me</button>
+        </div>
+        <div class="service">
+            <img src="/Da Project/images/com.jpeg">
+            <!--<img src="/kozzy_prod/statics/Images/comm.PNG" alt="Communities">-->
+            <h3>Communities</h3>
+            <p>We provide different communities and engaging opportunities for our members to connect, share experiences, and support one another in meaningful ways.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="service">
+            <img src="/Da Project/images/walk.jpeg">
+            <!--<img src="/kozzy_prod/statics/Images/self.PNG" alt="Self help-tools">-->
+            <h3>Self help-tools</h3>
+            <p>Self-help tools empower individuals to reduce anxiety, combat depression, improve mood, and enhance mental well-being through practical tips and strategies.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="service">
+            <img src="/Da Project/images/ther.jpeg">
+            <!--<img src="/kozzy_prod/statics/Images/the.PNG" alt="Therapist">-->
+            <h3>Therapist</h3>
+            <p> Therapists provide tailored therapies to address mental health concerns, offering personalized support and guidance through convenient booking for effective sessions.</p>
+            <button>Book Now</button>
+        </div>
+    </div>
+</section>
+
+<div id="contactus" class="paddsection">
+    <div class="container contact-container">
+      <!-- Get in Touch Column -->
+      <div class="contact-section">
+        <h2 class="mb-30 text-center">GET IN TOUCH</h2>
+        <div>
+          <div class="form-container">
+            <form id="contact-form">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+    
+                <label for="email">Email address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="email@website.com" required>
+    
+                <label for="phone">Phone number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I allow this website to store my submission so they can respond to my inquiry. <span class="required">*</span></label>
+                </div>
+                
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+        </div>
+        </div>
+      </div>
+  
+      <!-- Location Column -->
+      <div class="location-section" id="contactus">
+        <h2 class="mb-30 text-center">LOCATION</h2>
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5050470011747!2d30.05741827507267!3d-1.9511718980311334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5a86d814c61%3A0x7d3b83e12b1c11a9!2sNorrsken%20House%20Kigali!5e0!3m2!1sen!2srw!4v1718736783706!5m2!1sen!2srw" 
+            allowfullscreen="" 
+            loading="lazy"
+          ></iframe>
+          <div class="info-list">
+            <h2>Reach out to us for any inquiries</h2>
+            <li><i class="material-icons">&#xe158;</i>info@kozzywellness</li>
+            <li><i class='fas fa-phone' style='font-size:36px'></i>+250 788 888 888</li> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+  <p class="text-center"><b>&copy; 2024 KOZZY-WELLNESS.<b></b></p>
+  </footer>
+  
+  <script>
+    function openMenu() {
+      const menuItems = document.getElementById("menuItems");
+   
+      if (menuItems.style.display === "block") {
+        menuItems.style.display = "none";
+      } else {
+        menuItems.style.display = "block";
+      }
+      
+    }
+    setInterval(()=>{
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 969) {
+      } else {
+        // If the screen width is greater than 930px, ensure the menu is visible
+        menuItems.style.display = "none";
+      }
+    },100)
+
+  </script>
+<script src="/Da Project/Dan-Pro/styles/JS/landing.js"></script>
+
+</body>
+</html>

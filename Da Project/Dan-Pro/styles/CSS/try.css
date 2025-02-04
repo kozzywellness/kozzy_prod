@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300,400,100,300,500,700,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/Da Project/images/backgr.jpeg') no-repeat center/cover;
+    /*background: #081b29;*/
+}
+
+.wrapper {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background: #0ef;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+    /*
+.wrapper {
+        display: flex;
+        width: 800px;
+        height: 400px;
+        background: #081b29; /* Ensure form box background stands out *
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+        position: relative; /* Keeps the form content above the background *
+        z-index: 2; /* Ensure the wrapper is above the overlay *
+        margin: auto; /* Center horizontally *
+        top: 50%;
+        transform: translateY(-50%); /* Center vertically *
+    }
+    */
+
+.wrapper .form-box {
+    width: 50%;
+    padding: 20px 30px;
+    background: #081b29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box h2 {
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom: 2px solid #0ef;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #0ef;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #0ef;
+    color: #081b29;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #081b29;
+}
+
+.form-box .logreg-link {
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.logreg-link a {
+    color: #0ef;
+    text-decoration: none;
+}
+
+.wrapper .info-text {
+    width: 50%;
+    background: linear-gradient(135deg, #081b29, #0ef);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.info-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
